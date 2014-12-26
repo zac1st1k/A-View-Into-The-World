@@ -35,6 +35,11 @@
     NSLog(@"button2 bouds origin (%f, %f)", self.button2.bounds.origin.x, self.button2.bounds.origin.y);
     NSLog(@"button2 frame origin (%f, %f)", self.button2.frame.origin.x, self.button2.frame.origin.y);
     NSLog(@"button2 center (%f, %f)", self.button2.center.x, self.button2.center.y);
+    
+    CGRect myViewsFrame = CGRectMake(20, 250, 200, 60);
+    UIView *myView = [[UIView alloc] initWithFrame:myViewsFrame];
+    myView.backgroundColor = [UIColor redColor];
+    [self.view addSubview:myView];
 }
 
 
