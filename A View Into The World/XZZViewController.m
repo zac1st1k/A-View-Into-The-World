@@ -40,6 +40,14 @@
     UIView *myView = [[UIView alloc] initWithFrame:myViewsFrame];
     myView.backgroundColor = [UIColor redColor];
     [self.view addSubview:myView];
+    
+    UIButton *anotherButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    anotherButton.frame = CGRectMake(40, 40, 200, 100);
+    anotherButton.backgroundColor = [UIColor grayColor];
+    [anotherButton setTitle:@"Press me...." forState:UIControlStateNormal];
+    [self.view addSubview:anotherButton];
+    
+    [self.button2 removeFromSuperview];
 }
 
 
