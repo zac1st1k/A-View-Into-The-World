@@ -48,13 +48,20 @@
     [self.view addSubview:anotherButton];
     
     [self.button2 removeFromSuperview];
+    [anotherButton addTarget:self action:@selector(didPressButton:) forControlEvents:UIControlEventTouchUpInside];
 }
+
 
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)didPressButton:(UIButton *)button
+{
+    button.backgroundColor = [UIColor blueColor];
 }
 
 @end
